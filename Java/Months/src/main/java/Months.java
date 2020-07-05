@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Months {
 
-
     public static void main(String[] args) {
 
         System.out.println("Enter any number from 1 to 12");

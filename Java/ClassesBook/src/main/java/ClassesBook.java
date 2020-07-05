@@ -12,33 +12,29 @@ import java.util.Arrays;
         books[4] = new Book(5, "Great Expectations", "Charles Dickens", "Crown Publishing Group", 1999, 234, "soft cover");
         books[5] = new Book(6, "David Copperfield", "Charles Dickens", "Holiday House", 2001, 120, "soft cover");
 
+        System.out.println("List of books:");
         for (Book book : books)  {
             System.out.println(book);
         }
-        System.out.println(Arrays.toString(books));
         System.out.println();
 
 
-        //List of books by Homer - поиск книг по автору
         System.out.println("List of books by Homer: ");
         for (int i = 0; i < books.length; i++)
             if (books[i].getAuthor() == "Homer")
                 System.out.println(books[i].getTitle());
         System.out.println();
 
-        //List of books that were published by "Holiday House" Publishing office - поиск книг по издательству
         System.out.println("List of books where Publishing office is Holiday House: ");
         for (int i = 0; i < books.length; i++)
             if (books[i].getPublishingOffice() == "Holiday House")
                 System.out.println(books[i].getTitle());
         System.out.println();
 
-        //List of books that were published after 2000 year
         System.out.println("List of books that were published after 2000 year: ");
         for (int i = 0; i < books.length; i++)
             if (books[i].getYear() > 2000)
                 System.out.println(books[i].getTitle());
-
 
     }
 }
